@@ -6,11 +6,14 @@
      <link rel="stylesheet" href="script01.css">
 </head>
 <body>
-     <img src="Video/spacer.gif" width="305" height="312" id="myVideo" alt="some image">
+     
+     <video width="320" height="240" controls>
+  <source src="Video/Videos/" type="video/mp4">
+     </video> 
   
   <script>
     class Randomiser {
-  static integer = (min = 1, max = 100) => Math.floor(Math.random() * (max - min)) + min;
+  static integer = (min = 1, max = 103) => Math.floor(Math.random() * (max - min)) + min;
   static array = arr => arr[Math.floor(Math.random() * arr.length)];
 };
        <!-- this took forever but it works so epic :) -->
