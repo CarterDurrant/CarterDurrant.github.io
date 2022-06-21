@@ -6,77 +6,35 @@
      
     <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=">
-    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
-
-:root {
-  --color-red: #ec1840;
-  --color-purple: #7a18ec;
-  --color-white: #fff;
-  --color-black-1: #111;
-  --color-black-2: #222;
-  --color-black-3: #444;
-  --speed-normal: 0.5s;
-  --speed-fast: 0.8s;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  min-height: 100vh;
-  background: var(--color-black-1);
-}
-a {
-  position: relative;
-  width: 180px;
-  height: 60px;
-  margin: 20px;
-  line-height: 60px;
-  letter-spacing: 2px;
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
-  color: var(--color-white);
-  trasnition: var(--speed-normal);
-  border: 1px solid var(--color-red);
-  &:hover {
-    border: 1px solid transparent;
-    background: var(--color-red) url(https://i.postimg.cc/wBXGXbWN/pixel.png); // 360px x 1080px
-    transition-delay: 0.8s;
-    background-size: 180px;
-    animation: animate var(--speed-fast) steps(8) forwards;
-  }
-  &:last-of-type {
-    border: 1px solid var(--color-purple);
-    &:hover {
-      background: var(--color-purple) url(https://i.postimg.cc/FzBWFtKM/pixel2.png); // 360px x 1080px
-    }
-  }
-}
-@keyframes animate {
-  0% {
-    background-position-y: 0;
-  }
-  100% {
-    background-position-y: -480px;
-  }
-}
-
+    
+    <style>
+      button{
+        display: inline-block;
+        outline: 0;
+        border: none;
+        box-shadow: none;
+        cursor: pointer;
+        padding: 9px 22px;
+        font-size: 22px;
+        height: 50px;
+        font-weight: 400;
+        color: #fff;
+        text-align: center;
+        line-height: normal;
+        background: linear-gradient(90deg,#5522fa 0,#0074e4 100%);
+        border-radius: 50px;
+        transition: color .2s ease,background-color .2s ease,box-shadow .2s ease;
+        :hover{
+            box-shadow: 0 0 0 0.15rem #5ceace;
+                }
+      }
+    </style>
   </head>
   
   
   <body>
   
-   <a href="javascript:void(0);">Pixel button</a>
-  <a href="javascript:void(0);">Hover effects</a>
+    <button type = button> </button>
     
     
   </body>
