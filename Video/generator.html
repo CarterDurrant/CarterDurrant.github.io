@@ -13,17 +13,18 @@
      
 </head>
 <body>
-   
+  
+	<script>
+    document.querySelector("#myVideo").src = `Video/Videos/${videos[Math.floor(Math.random() * videos.length)]}.mp4`;
+  	</script>
+	
 	<div>  
      <video width="640" height="480" controls>
   <source src="Video/Videos/video_1.mp4" id="myVideo" type="video/mp4">
      </video> 
      </div>
   
-  <script>
-    document.querySelector("#myVideo").src = `Video/Videos/${videos[Math.floor(Math.random() * videos.length)]}.mp4`;
-
-  </script>
+  
      <!-- Matthais#8217 is a chad -->
 </body>
 </html>
